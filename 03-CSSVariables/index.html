@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Variables</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet"> 
+        <script src="js/cssvariables.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="control-panel">
+                <div class="title">
+                    <h1 class="font-title">Update CSS properties using <span class="js-title">JS</span> </h1>
+                </div>
+                <div class="control-buttons">
+                    <div class="control-container">
+                        <p class="font-control padding-right">Base control: </p>
+                        <input type="color" value="#ffffff" style="display: none;">
+                        <div class="color-picker"></div>
+                    </div>
+                    <div class="control-container">
+                        <p class="font-control padding-right">Blur: </p>
+                        <input id="blur-range" type="range" min="0" max="100" step="1" >
+                    </div>
+                    <div class="control-container">
+                        <p class="font-control padding-right">Grayscale: </p>
+                        <input id="grayscale-range" type="range" min="0" max="100" step="1">
+                    </div>
+                </div>
+            </div>
+            <div class="image-panel">
+                <div class="border-container">
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="footer-panel">
+                
+            </div>
+        </div>
+    </body>
+</html>

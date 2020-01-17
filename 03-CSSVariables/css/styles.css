@@ -1,0 +1,105 @@
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 1fr 15%;
+    height: 100vh;
+}
+
+.control-panel{
+    background-color: #2abb9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title{
+    padding-bottom: 2%;
+}
+
+.control-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: 90%;
+    height: 90%;
+    background: url('../img/landscape.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.control-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.font-control{
+    font-family: 'Fruktur', cursive;
+    font-size: 2rem;
+    color: #bb472a;
+    font-weight: bold;
+}
+
+.font-title{
+    font-family: 'Fruktur', cursive;
+    font-size: 3rem;
+    color: #bb472a;
+    font-weight: bold;
+}
+
+.js-title{
+    font-size: 3.5rem;
+    color: #f0db4f;
+}
+
+.color-picker{
+    border-radius: 50%;
+    border: 2px #bb472a solid;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.padding-right{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+
