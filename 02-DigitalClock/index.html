@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet"> 
+        <script src="js/clock.js"></script>
+    </head>
+    <body>
+
+       <div id="clock-container" class="container">
+           <div class="title">  
+               <h1 class="clock-font center-elements">Clock</h1>
+           </div>  
+           <div class="subcontainer">
+            <div class="day-container">
+                    <p id="days" class="clock-font">DOM</p>
+                    <p class="label-font center-elements">Day</p>
+                </div>
+                <div class="separator-container">
+                    <p class="clock-font">:</p>
+                </div>
+                <div class="hours-container">
+                    <p id="hours" class="clock-font">00</p>
+                    <p class="label-font center-elements">Hour</p>
+                </div>
+                <div class="separator-container">
+                    <p class="clock-font">:</p>
+                </div>
+                <div class="minutes-container">
+                    <p id="minutes" class="clock-font">00</p>
+                    <p class="label-font center-elements">Minutes</p>
+                </div>
+                <div class="separator-container">
+                    <p class="clock-font">:</p>
+                </div>
+                <div class="seconds-cointainer">
+
+                    <p id="seconds" class="clock-font">00</p>
+                    <p class="label-font center-elements">Seconds</p>
+                </div>
+            </div>
+       </div> 
+
+       <div id="timer-container" class="container hide-panel">
+            <div class="title">  
+                <h1 class="clock-font center-elements">Timer</h1>
+            </div>  
+            <div class="subcontainer">
+                <div class="hours-container center-elements">
+                    <p id="hours-timer" class="clock-font">00</p>
+                    <p class="label-font">Hour</p>
+                    <button id="start-timer-button" class="timer-button">START</button>
+                </div>
+                <div class="separator-container">
+                    <p class="clock-font">:</p>
+                </div>
+                <div class="minutes-container center-elements">
+                    <p id="minutes-timer" class="clock-font">00</p>
+                    <p class="label-font">Minutes</p>
+                    <button id="stop-timer-button" class="timer-button">STOP</button>
+                </div>
+                <div class="separator-container">
+                    <p class="clock-font">:</p>
+                </div>
+                <div class="seconds-cointainer center-elements">
+                    <p id="seconds-timer" class="clock-font">00</p>
+                    <p class="label-font">Seconds</p>
+                    <button id="reset-timer-button" class="timer-button">RESET</button>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="analogous-container" class="container hide-panel">
+            <div class="clock-border">
+                <div id="hour-hand" class="clock-hand" style="z-index: 0;"></div>
+                <div id="minute-hand" class="clock-hand" style="z-index: 1;"></div>
+                <div id="second-hand" class="clock-hand" style="z-index: 2;"></div>
+            </div>
+        </div> 
+
+       
+        <div class="control-panel">
+           <button id="clockButton">Clock</button>
+           <button id="timerButton">Timer</button>
+           <button id="analogousClockButton">Analog</button>
+        </div>
+
+    </body>
+</html>
